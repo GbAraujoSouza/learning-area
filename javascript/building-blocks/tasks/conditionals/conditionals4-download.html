@@ -33,6 +33,12 @@
     let pwdResult;
 
     // Add your code here
+    if (machineActive){
+      machineResult = "The machine is active";
+      pwdResult = (pwd === "cheese")? "You are logged in!" : "Login fail!"
+    } else {
+      machineResult = "Activate the machine, please.";
+    }
 
     // Don't edit the code below here!
 

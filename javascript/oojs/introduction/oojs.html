@@ -11,6 +11,17 @@
   </body>
 
     <script>
+      function Person (name) {
+        this.name = name;
+        this.introduceSelf = function() {
+          console.log(`Hi! I'm ${this.name}.`);
+        }
+      }
+
+      const gabriel = new Person("gabriel");
+      const sylvia = new Person("sylvia");
+
+      const myNotification = new Notification('Hello!');
 
     </script>
 </html>
